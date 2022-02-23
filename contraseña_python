@@ -1,0 +1,6 @@
+contrasena = "UPSA"
+contra = ""
+while contra != contrasena:
+        contra = input("introduce la contraseña:")
+
+print("contraseña correcta")
