@@ -1,0 +1,6 @@
+palabra=input("introduce la palabra:")
+if str (palabra)== "".join(reversed(palabra)):
+    print("es palindromo")
+    
+else:
+    print("no es palindromo")
