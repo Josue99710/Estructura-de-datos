@@ -1,0 +1,4 @@
+peso=float(input("ingrese su peso:"))
+altura=float(input("ingrese su altura:"))
+imc=(peso/altura)
+print("tu imc es:",imc)
