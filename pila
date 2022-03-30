@@ -1,0 +1,28 @@
+#ejemplo de pila
+pila=[]
+#incluir elementos push apilar
+pila.append("lunes")
+pila.append("martes")
+pila.append("miercoles")
+pila.append("jueves")
+pila.append("viernes")
+pila.append("sabado")
+pila.append("domingo")
+
+print(pila)
+#sacar elementos pop desapilar
+x=pila.pop()
+print (pila)
+
+x=pila.pop()
+print (pila)
+x=pila.pop()
+print (pila)
+x=pila.pop()
+print (pila)
+x=pila.pop()
+print (pila)
+x=pila.pop()
+print (pila)
+x=pila.pop()
+print (pila)
