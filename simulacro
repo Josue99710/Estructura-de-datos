@@ -1,0 +1,33 @@
+
+print("........MENU........")
+print("1. añadir numeros a la lista")
+print("2. cargar elementos de la lista con los numeros pares")
+print("3. mostrar la cantidad de elementos de la misma")
+print("0. salir")
+op=int(input("digite una opcion :"))
+    
+if (op==1):
+    lista=[]
+    tamaño=int(input("digite el tamaño de la lista :"))
+    for i in range (tamaño):
+        n=int(input("digite un numero :"))
+    lista.append(n)
+    
+  
+if (op==2):
+    lista=[]
+    tamaño=int(input("digite el tamaño de la lista :"))
+    i=1
+    for i in range (tamaño):
+        if (i%2==0):
+            lista.append(i)
+                       
+                                       
+    print ("la lista es",lista)  
+        
+if (op==3):
+    lista=[]
+    print ("la cantidad de la lista es :",len(lista))
+    
+if(op==0):
+    raise ValueError 
