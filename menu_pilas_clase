@@ -1,0 +1,95 @@
+class pila:
+    def __init__(self):
+        self.items=[]
+        self.items2=[]
+        self.items3=[]
+       
+    def cargar_pila(self,item):#1
+        self.items.append(item)
+        
+    def mostrar_pila(self):
+        self.cargar_pila()
+        print("",self.cargar_pila())
+        print("----------")
+    
+    def contar_pila(self):#2
+        print("elementos de la pila:",len(self.items))
+    
+    def invertir_pila(self):#3
+        reverse (self.items)
+        print("la lista invertida es:",self.items)
+    
+    def sacar_n_elemento(self):#4
+        n=int(input("que elemento desea sacar:")) 
+        self.items.remove(n)
+        print("la pila sin el elemento N es:", self.items)
+        
+    def ingrese_n_posicion(self):
+        num=int(input("ingrese el numero que desea ingresar a la pila:"))
+        n=int(input("en que posicion lo desea ingresar:"))
+        self.items.insert(n,num)
+        print("la pila con el numero ingresado en N posicion es:",self.items)
+        
+    def ordenar_pila(self):
+        self.items.sort()
+        print("la pila ordenada es:",self.items)
+        
+    def eliminar_elementos_repetidos(self):
+        t=pila()
+        for i in range (len(self.items)):
+            if (self.items[i]==self.items[i+1]):
+                t.items.append(self.tems[i])
+        self.items=t.tems       
+        print("la pila sin elementos repetidos es:",self.items)
+        
+    def eliminar_elementos_pares(self):
+        t=pila()
+        for i in range (len(self.items)):
+            if (self.items[i]%2!=0):
+                t.items.append(self.items[i])
+        self.items=t.items
+        print("la pila sin elementos pares es:",self.items)
+        
+        
+        
+p=pila()            
+n=int(input("Ingrese cuantos numeros desea ingresar: "))
+for i in range(n):
+    x=int(input("Ingrese un numero: "))
+    p.cargar_pila(x)                                              
+        
+
+
+print("----------------------")       
+print("--------MENU--------")
+print("1.cuenta los elementos-")
+print("2.invertir el orden de la pila")
+print("3.sacar el elemento N de la pila")
+print("4.ingrese numero en posicion N")
+print("5.ordenar")
+print("6.eliminar elementos repetidos")
+print("7.eliminar elementos pares")
+print("8.mostrar elementos de la lista")
+print("0.salir")
+op=int(input("DIGITE UNA OPCION VALIDA:"))
+
+if(op==1):
+    p.contar_pila()
+elif (op==2):
+    p.invertir_pila()
+elif (op==3):
+    p.sacar_n_elemento()
+elif (op==4):
+    p.ingrese_n_posicion()
+elif (op==5):
+    p.ordenar_pila()
+elif (op==6):
+    p.eliminar_elementos_repetidos()
+elif (op==7):
+    p.eliminar_elementos_pares()
+elif (op==8):
+    p.mostrar_pila()
+    
+    
+exit(0)    
+    
