@@ -1,0 +1,20 @@
+#crear cola con los datos de los numeros primos que ingrese el usuario
+
+cola=[]
+t=int(input("digite el tamaño de la cola:"))
+for i in range(t):
+    n=int(input("digite el numero"))
+    if (n>1):
+        cont=0
+        for i in range (2,n):
+            resto=n%i
+            
+            if resto==0:
+                cont+=1
+        if cont==0:
+            print("es un numero primo")
+            cola.append(n)
+        else:
+            print("no es primo")
+            
+print (cola) 
