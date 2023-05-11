@@ -1,0 +1,44 @@
+using System.ComponentModel.DataAnnotations;
+using System.Security.Cryptography;
+
+namespace APIBDexample.models
+{
+    public enum SexType
+    {
+        femenino = 0,
+        masculino = 1,
+    }
+
+    public class cliente
+
+    {
+        [Key]
+        public int clienteId { get; set; }
+
+        [Required]
+        [StringLength(
+            70,
+            ErrorMessage = "FAVOR INGRESE UN NOMBRE ENTRE 5 A 70 caracteres",
+            MinimumLength = 5)]
+        [Display(Name = "NOMBRE COMPLETO")]
+        public int clientenumber { get; set; }
+        [DataType(DataType.Date)]
+        [Display(Name = "NUMERO DE TELEFONO")]
+
+
+        public int codigo { get; set; }
+        [Display(Name = "CODIGO")]
+
+
+
+
+
+
+    }
+
+}
+
+
+
+
+
